@@ -1,0 +1,23 @@
+@import "lib/base";
+@import "lib/animations";
+@import "lib/keyframes";
+//variables
+$red: #d20000;
+// gradients for ie
+$experimental-support-for-svg: true;
+// global sprites
+$icons: sprite-map("icons/*.png", $spacing: 10px);
+//extend
+%hide-text {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+%border {
+	background: #be0e30;
+	border-top: 3px solid #d35b73;
+	border-bottom: 3px solid #a50c2a;
+	border-left: 3px solid #a50c2a;
+	border-right: 3px solid #a50c2a;
+	color: #fff;
+}
