@@ -1,0 +1,6 @@
+.ie7 .catalog li { display: inline; zoom: 1; }
+.ie7 .video__close { zoom: 1; }
+
+.ie7 .video, .ie8 .video { background: #000; }
+.ie7 .check i, .ie8 .check i { display: none; }
+.ie7 .check input, .ie8 .check input { border: none; }
