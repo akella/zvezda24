@@ -11,339 +11,351 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link rel="stylesheet" media="screen" href="css/video-js.min.css" >	
 	<link href='http://fonts.googleapis.com/css?family=Cuprum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>	
+	<script src="js/jquery.tools.min.js"></script>		
+	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/video.min.js"></script>	
+	<script src="js/jquery.scrollTo-min.js"></script>	
+	<script src="js/jquery.validate.min.js"></script>	
+	<script src="js/jquery.maskedinput-1.2.2.js"></script>					
 	<script src="js/common.js"></script>
 </head>
-<body>
-<!-- BEGIN .top -->
-<div class="top-wrap">
-	<div class="container">
-		<nav class="top-nav">
-			<ul>
-				<li><a href="#">О проекте</a></li>
-				<li><a href="#">Правила пользования услугами</a></li>
-				<li><a class="active" href="#">Гарантии</a></li>
-				<li><a href="#">Как это работает?</a></li>      
-			</ul>
-		</nav>
-	</div>
-</div>
-<!-- END .top -->
-<!-- BEGIN .header -->
-<header class="header">
-	<div class="container">
-		<div class="logo">
-			<h1><a href="#">POZDRAVKRUTO.RU</a></h1>
-			<span>видеопоздравления от знаменитостей</span>
-		</div>
-		<div class="buy-holiday">Купи себе праздник</div>
-		<ul class="contacts">
-			<li>8-800-2000-600</li>
-			<li><span>spraznikom<i></i></span></li>
-			<li><a href="mailto:info@spraznikom.com">info@spraznikom.com</a></li>
-		</ul>
-	</div>
-</header>
-<!-- END .header -->
-<!-- BEGIN .order-top -->
-<div class="order-top">
-	<div class="container">Ваш заказ<span>Группа ВИА ГРА</span></div>
-</div>
-<!-- END .order-top -->	
-<!-- BEGIN .step1 -->	
-<div class="container">
-	<div class="order order_step1">		
-		<div class="order__date">
-			<div class="order__title"><span>Шаг 1.</span>Выберите дату мероприятия</div>
-			<ul class="datepicker">
-				<li>
-					<div class="datepicker__month">Октябрь</div>
-					<table>
-						<tr>
-							<th>пн</th>
-							<th>вт</th>
-							<th>ср</th>
-							<th>чт</th>
-							<th>пт</th>
-							<th>сб</th>
-							<th>вс</th>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td><span class="no-active">1</span></td>
-							<td><span class="no-active">2</span></td>
-							<td><span class="no-active">3</span></td>
-							<td><span class="no-active">4</span></td>
-							<td><span class="no-active">5</span></td>							
-						</tr>
-						<tr>
-							<td><span class="no-active">6</span></td>
-							<td><span class="no-active active">7</span></td>
-							<td><span class="no-active">8</span></td>
-							<td><span class="no-active">9</span></td>
-							<td><span class="no-active">10</span></td>
-							<td><span class="no-active">11</span></td>
-							<td><span class="no-active">12</span></td>
-						</tr>
-						<tr>
-							<td><span class="no-active">13</span></td>
-							<td><span class="no-active">14</span></td>
-							<td><span>15</span></td>
-							<td><span>16</span></td>
-							<td><span>17</span></td>
-							<td><span>18</span></td>
-							<td><span>19</span></td>
-						</tr>
-						<tr>
-							<td><span>20</span></td>
-							<td><span>21</span></td>
-							<td><span>22</span></td>
-							<td><span>23</span></td>
-							<td><span>24</span></td>
-							<td><span>25</span></td>
-							<td><span>26</span></td>
-						</tr>
-						<tr>
-							<td><span>27</span></td>
-							<td><span>28</span></td>
-							<td><span>29</span></td>
-							<td><span>30</span></td>
-							<td><span>31</span></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<div class="datepicker__month">Ноябрь</div>
-					<table>
-						<tr>
-							<th>пн</th>
-							<th>вт</th>
-							<th>ср</th>
-							<th>чт</th>
-							<th>пт</th>
-							<th>сб</th>
-							<th>вс</th>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td><span>1</span></td>
-							<td><span>2</span></td>
-							<td><span>3</span></td>
-							<td><span>4</span></td>
-							<td><span>5</span></td>							
-						</tr>
-						<tr>
-							<td><span>6</span></td>
-							<td><span>7</span></td>
-							<td><span>8</span></td>
-							<td><span>9</span></td>
-							<td><span>10</span></td>
-							<td><span>11</span></td>
-							<td><span>12</span></td>
-						</tr>
-						<tr>
-							<td><span>13</span></td>
-							<td><span>14</span></td>
-							<td><span>15</span></td>
-							<td><span>16</span></td>
-							<td><span>17</span></td>
-							<td><span>18</span></td>
-							<td><span>19</span></td>
-						</tr>
-						<tr>
-							<td><span>20</span></td>
-							<td><span>21</span></td>
-							<td><span>22</span></td>
-							<td><span>23</span></td>
-							<td><span>24</span></td>
-							<td><span>25</span></td>
-							<td><span>26</span></td>
-						</tr>
-						<tr>
-							<td><span>27</span></td>
-							<td><span>28</span></td>
-							<td><span>29</span></td>
-							<td><span>30</span></td>
-							<td><span>31</span></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<div class="datepicker__month">Декабрь</div>
-					<table>
-						<tr>
-							<th>пн</th>
-							<th>вт</th>
-							<th>ср</th>
-							<th>чт</th>
-							<th>пт</th>
-							<th>сб</th>
-							<th>вс</th>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td><span>1</span></td>
-							<td><span>2</span></td>
-							<td><span>3</span></td>
-							<td><span>4</span></td>
-							<td><span>5</span></td>							
-						</tr>
-						<tr>
-							<td><span>6</span></td>
-							<td><span>7</span></td>
-							<td><span>8</span></td>
-							<td><span>9</span></td>
-							<td><span>10</span></td>
-							<td><span>11</span></td>
-							<td><span>12</span></td>
-						</tr>
-						<tr>
-							<td><span>13</span></td>
-							<td><span>14</span></td>
-							<td><span>15</span></td>
-							<td><span>16</span></td>
-							<td><span>17</span></td>
-							<td><span>18</span></td>
-							<td><span>19</span></td>
-						</tr>
-						<tr>
-							<td><span>20</span></td>
-							<td><span>21</span></td>
-							<td><span>22</span></td>
-							<td><span class="no-active">23</span></td>
-							<td><span class="no-active">24</span></td>
-							<td><span class="no-active">25</span></td>
-							<td><span class="no-active">26</span></td>
-						</tr>
-						<tr>
-							<td><span class="no-active">27</span></td>
-							<td><span class="no-active">28</span></td>
-							<td><span class="no-active">29</span></td>
-							<td><span class="no-active">30</span></td>
-							<td><span class="no-active">31</span></td>
-							<td></td>
-							<td></td>
-						</tr>
-					</table>
-				</li>
-			</ul>
-			<div class="order__attention">Заказ можно сделать не ранее чем через 7 дней<i></i></div>
-		</div>
-		<div class="order__pic">
-			<img src="img/pic2.jpg" alt="">
-		</div>
-	</div>
-	<!-- END .step1 -->
-</div>
-<!-- BEGIN .step2 -->
-<div class="order order_step2">
-	<div class="container">
-		<div class="order__title"><span>Шаг 2.</span>Кого, с чем поздравляем ?</div>
-		<ul class="order__type">
-			<li class="active">день рождения/юбилей</li>
-			<li>свадьба</li>
-			<li>корпоратив</li>
-			<li>рождение ребенка</li>
-			<li>иное</li>
-		</ul>
-	</div>	
-	<div class="order__victim">
+<body id="top">
+<!-- BEGIN .out -->
+<div class="out">
+	<!-- BEGIN .top -->
+	<div class="top-wrap">
 		<div class="container">
-			<div class="form-field">
-				<label>Имя<i>*</i></label>
-				<input type="text" placeholder="Александр">
-			</div>	
-			<div class="form-field error">
-				<label>Фамилия<i>*</i></label>
-				<input type="text" placeholder="Александр">
-				<span>Фамилия не должна содежрать цифр</span>
-			</div>	
-			<div class="form-field">
-				<label>Отчество<i>*</i></label>
-				<input type="text" placeholder="Александр">
+			<nav class="top-nav">
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Правила пользования услугами</a></li>
+					<li><a class="active" href="#">Гарантии</a></li>
+					<li><a href="#">Как это работает?</a></li>      
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- END .top -->
+	<!-- BEGIN .header -->
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<h1><a href="#">POZDRAVKRUTO.RU</a></h1>
+				<span>видеопоздравления от знаменитостей</span>
 			</div>
-			<div class="form-field">
-				<label>Место рождения / Город</label>
-				<input type="text" placeholder="Александр">
-			</div>
-			<div class="form-field">
-				<label>Пол</label>
-				<div class="form-field__check">
-					<label class="check"><input type="radio" checked="checked" name="sex"><i></i>Мужской</label>
-					<label class="check"><input type="radio" name="sex"><i></i>Женский</label>
+			<div class="buy-holiday">Купи себе праздник</div>
+			<ul class="contacts">
+				<li>8-800-2000-600</li>
+				<li><span>spraznikom<i></i></span></li>
+				<li><a href="mailto:info@spraznikom.com">info@spraznikom.com</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- END .header -->
+	<!-- BEGIN form for order -->
+	<form action="" class="form-for-order">
+		<!-- BEGIN .order-top -->
+		<div class="order-top">
+			<div class="container">Ваш заказ<span>Группа ВИА ГРА</span></div>
+		</div>
+		<!-- END .order-top -->	
+		<!-- BEGIN .step1 -->	
+		<div class="container">
+			<div class="order order_step1">		
+				<div class="order__date">
+					<div class="order__title"><span>Шаг 1.</span>Выберите дату мероприятия</div>
+					<ul class="datepicker">
+						<li>
+							<div class="datepicker__month">Октябрь</div>
+							<table>
+								<tr>
+									<th>пн</th>
+									<th>вт</th>
+									<th>ср</th>
+									<th>чт</th>
+									<th>пт</th>
+									<th>сб</th>
+									<th>вс</th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td><span class="no-active">1</span></td>
+									<td><span class="no-active">2</span></td>
+									<td><span class="no-active">3</span></td>
+									<td><span class="no-active">4</span></td>
+									<td><span class="no-active">5</span></td>							
+								</tr>
+								<tr>
+									<td><span class="no-active">6</span></td>
+									<td><span class="no-active active">7</span></td>
+									<td><span class="no-active">8</span></td>
+									<td><span class="no-active">9</span></td>
+									<td><span class="no-active">10</span></td>
+									<td><span class="no-active">11</span></td>
+									<td><span class="no-active">12</span></td>
+								</tr>
+								<tr>
+									<td><span class="no-active">13</span></td>
+									<td><span class="no-active">14</span></td>
+									<td><span>15</span></td>
+									<td><span>16</span></td>
+									<td><span>17</span></td>
+									<td><span>18</span></td>
+									<td><span>19</span></td>
+								</tr>
+								<tr>
+									<td><span>20</span></td>
+									<td><span>21</span></td>
+									<td><span>22</span></td>
+									<td><span>23</span></td>
+									<td><span>24</span></td>
+									<td><span>25</span></td>
+									<td><span>26</span></td>
+								</tr>
+								<tr>
+									<td><span>27</span></td>
+									<td><span>28</span></td>
+									<td><span>29</span></td>
+									<td><span>30</span></td>
+									<td><span>31</span></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<div class="datepicker__month">Ноябрь</div>
+							<table>
+								<tr>
+									<th>пн</th>
+									<th>вт</th>
+									<th>ср</th>
+									<th>чт</th>
+									<th>пт</th>
+									<th>сб</th>
+									<th>вс</th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td><span>1</span></td>
+									<td><span>2</span></td>
+									<td><span>3</span></td>
+									<td><span>4</span></td>
+									<td><span>5</span></td>							
+								</tr>
+								<tr>
+									<td><span>6</span></td>
+									<td><span>7</span></td>
+									<td><span>8</span></td>
+									<td><span>9</span></td>
+									<td><span>10</span></td>
+									<td><span>11</span></td>
+									<td><span>12</span></td>
+								</tr>
+								<tr>
+									<td><span>13</span></td>
+									<td><span>14</span></td>
+									<td><span>15</span></td>
+									<td><span>16</span></td>
+									<td><span>17</span></td>
+									<td><span>18</span></td>
+									<td><span>19</span></td>
+								</tr>
+								<tr>
+									<td><span>20</span></td>
+									<td><span>21</span></td>
+									<td><span>22</span></td>
+									<td><span>23</span></td>
+									<td><span>24</span></td>
+									<td><span>25</span></td>
+									<td><span>26</span></td>
+								</tr>
+								<tr>
+									<td><span>27</span></td>
+									<td><span>28</span></td>
+									<td><span>29</span></td>
+									<td><span>30</span></td>
+									<td><span>31</span></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</li>
+						<li>
+							<div class="datepicker__month">Декабрь</div>
+							<table>
+								<tr>
+									<th>пн</th>
+									<th>вт</th>
+									<th>ср</th>
+									<th>чт</th>
+									<th>пт</th>
+									<th>сб</th>
+									<th>вс</th>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td><span>1</span></td>
+									<td><span>2</span></td>
+									<td><span>3</span></td>
+									<td><span>4</span></td>
+									<td><span>5</span></td>							
+								</tr>
+								<tr>
+									<td><span>6</span></td>
+									<td><span>7</span></td>
+									<td><span>8</span></td>
+									<td><span>9</span></td>
+									<td><span>10</span></td>
+									<td><span>11</span></td>
+									<td><span>12</span></td>
+								</tr>
+								<tr>
+									<td><span>13</span></td>
+									<td><span>14</span></td>
+									<td><span>15</span></td>
+									<td><span>16</span></td>
+									<td><span>17</span></td>
+									<td><span>18</span></td>
+									<td><span>19</span></td>
+								</tr>
+								<tr>
+									<td><span>20</span></td>
+									<td><span>21</span></td>
+									<td><span>22</span></td>
+									<td><span class="no-active">23</span></td>
+									<td><span class="no-active">24</span></td>
+									<td><span class="no-active">25</span></td>
+									<td><span class="no-active">26</span></td>
+								</tr>
+								<tr>
+									<td><span class="no-active">27</span></td>
+									<td><span class="no-active">28</span></td>
+									<td><span class="no-active">29</span></td>
+									<td><span class="no-active">30</span></td>
+									<td><span class="no-active">31</span></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</li>
+					</ul>
+					<div class="order__attention">Заказ можно сделать не ранее чем через 7 дней<i></i></div>
+				</div>
+				<div class="order__pic">
+					<img src="img/pic2.jpg" alt="">
 				</div>
 			</div>
-			<div class="form-field">
-				<label>Место работы</label>
-				<input type="text" placeholder="Александр">
+			<!-- END .step1 -->
+		</div>
+		<!-- BEGIN .step2 -->
+		<div class="order order_step2">
+			<div class="container">
+				<div class="order__title"><span>Шаг 2.</span>Кого, с чем поздравляем ?</div>
+				<ul class="order__type">
+					<li class="active">день рождения/юбилей</li>
+					<li>свадьба</li>
+					<li>корпоратив</li>
+					<li>рождение ребенка</li>
+					<li>иное</li>
+				</ul>
+			</div>	
+			<div class="order__victim">
+				<div class="container">
+					<div id="order-name" class="form-field">
+						<label>Имя<i>*</i></label>
+						<input type="text" placeholder="Александр" name="name">
+					</div>	
+					<div id="order-surname" class="form-field">
+						<label>Фамилия<i>*</i></label>
+						<input type="text" placeholder="Александр" name="surname">
+					</div>	
+					<div id="order-patronymic" class="form-field">
+						<label>Отчество<i>*</i></label>
+						<input type="text" placeholder="Александр" name="patronymic">
+					</div>
+					<div class="form-field">
+						<label>Место рождения / Город</label>
+						<input type="text" placeholder="Александр">
+					</div>
+					<div class="form-field">
+						<label>Пол</label>
+						<div class="form-field__check">
+							<label class="check"><input type="radio" checked="checked" name="sex"><i></i>Мужской</label>
+							<label class="check"><input type="radio" name="sex"><i></i>Женский</label>
+						</div>
+					</div>
+					<div class="form-field">
+						<label>Место работы</label>
+						<input type="text" placeholder="Александр">
+					</div>
+					<div id="order-comment" class="form-field">
+						<label>Комментарии<i>*</i></label>
+						<input type="text" placeholder="Александр" name="comment">
+					</div>
+					<div id="order-email" class="form-field">
+						<label>E-mail для отправки поздравления<i>*</i></label>
+						<input type="text" name="email">
+					</div>
+				</div>
 			</div>
-			<div class="form-field">
-				<label>Комментарии<i>*</i></label>
-				<input type="text" placeholder="Александр">
+		</div>
+		<!-- END .step2 -->
+		<!-- BEGIN .step3 -->
+		<div class="order order_step3">
+			<div class="container">
+				<div class="order__title"><span>Шаг 3.</span>Кто заказчик?</div>
+				<div id="order-fio" class="form-field">
+					<label>Ваше ФИО<i>*</i></label>
+					<input type="text" placeholder="Александр" name="fio">
+				</div>
+				<div id="order-phone" class="form-field form-field_bg">
+					<label>Ваш мобильный телефон<i>*</i></label>
+					<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+				</div>
+				<div id="order-email1" class="form-field">
+					<label>Ваш E-mail<i>*</i></label>
+					<input type="text" placeholder="Александр" name="email1">
+				</div>
+				<div id="order-skype" class="form-field">
+					<label>Ваш Skype<i>*</i></label>
+					<input type="text" placeholder="Александр" name="skype">
+				</div>
 			</div>
-			<div class="form-field error">
-				<label>E-mail для отправки поздравления<i>*</i></label>
-				<input type="text">
-				<span>Вы не указали e-mail для оправки!</span>
+		</div>
+		<!-- END .step3 -->
+		<!-- BEGIN .step4 -->
+		<div class="order order_step4">
+			<div class="container">
+				<div class="order__title"><span>Шаг 4.</span>оплата</div>
+				<div class="order__agree">
+					<label class="check"><input type="checkbox" checked="checked"><i></i>Я согласен с <a href="#"	>	договором</a></label>
+					<span>Система оплаты может снимать дополнительную комиссию.<i></i></span>
+				</div>
+				<div class="order__payment">
+					<input type="submit" value="оплатить заказ">
+					<span>20 000 рублей</span>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
-<!-- END .step2 -->
-<!-- BEGIN .step3 -->
-<div class="order order_step3">
-	<div class="container">
-		<div class="order__title"><span>Шаг 3.</span>Кто заказчик?</div>
-		<div class="form-field">
-			<label>Ваше ФИО<i>*</i></label>
-			<input type="text" placeholder="Александр">
-		</div>
-		<div class="form-field bg">
-			<label>Ваш мобильный телефон<i>*</i></label>
-			<input type="text" placeholder="0977787879">
-			<span>Введите 10 значный номер телефона</span>
-		</div>
-		<div class="form-field">
-			<label>Ваш E-mail<i>*</i></label>
-			<input type="text" placeholder="Александр">
-		</div>
-		<div class="form-field">
-			<label>Ваш Skype<i>*</i></label>
-			<input type="text" placeholder="Александр">
-		</div>
-	</div>
-</div>
-<!-- END .step3 -->
-<!-- BEGIN .step4 -->
-<div class="order order_step4">
-	<div class="container">
-		<div class="order__title"><span>Шаг 4.</span>оплата</div>
-		<div class="order__agree">
-			<label class="check"><input type="checkbox" checked="checked"><i></i>Я согласен с <a href="#">договором</a></label>
-			<span>Система оплаты может снимать дополнительную комиссию.<i></i></span>
-		</div>
-		<div class="order__payment">
-			<input type="submit" value="оплатить заказ">
-			<span>20 000 рублей</span>
-		</div>
-	</div>
-</div>
-<!-- END .step4 -->
+		<!-- END .step4 -->
+	</form>
+	<!-- END form for order -->
+	<!-- BEGIN .push -->
+	<div class="push"></div>
+	<!-- END .push -->
+<!-- END .out -->
 <!-- BEGIN .footer -->
 <div class="footer">
 	<div class="container">
 		<ul class="footer__contacts">
 			<li>POZDRAVKRUTO.RU © 2013</li>
 			<li>Телефон: 8-800-2000-600</li>
-			<li><span>skype: spraznikom</span>e-mail:<a href="mailto:info@spraznikom.com">info@spraznikom.com</a></li>
+			<li><span>skype: spraznikom</span>e-mail:<a href="mailto:info@spraznikom.com">info@spraznikom.	com</a></li>
 		</ul>
 		<nav class="footer__nav">
 			<ul>
