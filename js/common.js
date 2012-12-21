@@ -52,14 +52,43 @@ $('.filter').each(function() {
     return false;
   })    
 })
+//
+$('.nav').each(function() {
+  var method = 'easeInExpo',
+      topMenu = $('.nav'),
+      activeMenu = $('.active',topMenu),
+      mainlevel = $('a',topMenu),
+      animMenu = $('.nav__die');
+  
+  var animFunc = function(el) {
+    var menuWidth = el.outerWidth();
+    var menuLeft = el.position().left;
+    animMenu.stop(true).animate({
+      left: menuLeft,
+      width: menuWidth
+    }, 300, method);
+  }  
+  // если есть активный пункт меню, то позиционируем двигающуюся плашку на нем
+  animFunc(activeMenu);
+  // поведение движущейся плашки при наведении на любой пункт меню. Все тоже самое, что и при наличии активного пункта, только позиция плашки определяется относительно пункта, на который произошло наведение курсора мыши
+  mainlevel.click(function() {
+    mainlevel.removeClass('active');    
+    animFunc($(this));
+    $(this).delay(300).queue(function(next){
+      $(this).addClass("active");
+      next();
+    });
+    return false;
+  })    
+})
 
 //video
 $('.open-video').click(function() {
-	$('.video').fadeIn();
+	$('.video, .opacity').fadeIn();
 	return false;
 });
-$('.video__close').click(function() {
-	$('.video').fadeOut();
+$('.video__close, .opacity').click(function() {
+	$('.video, .opacity').fadeOut();
 });
 
 //datepicker
@@ -69,69 +98,17 @@ $('.datepicker span').click(function() {
 });
 
 //order types
-$('.order__type li').click(function() {
-	$('.order__type li').removeClass('active');
+$('.order__type a').click(function() {
+  var order_type = $(this).attr('href');
+	$('.order__type a').removeClass('active');
+  $('.order__victim').hide();
 	$(this).addClass('active');
+  $('.'+order_type).show();
+  return false;
 });
 
 //validator form
-$('.form-for-order').validate({
-  rules : {
-    name: {required : true, minlength: 2},
-    surname: {required : true, /*number: true,*/ minlength: 2},
-    patronymic: {required : true, minlength: 2},
-    comment: {required : true},
-    email: {required : true, email: true},
-    email1: {required : true, email: true},
-    fio: {required : true},
-    skype: {required : true},
-    phone: {required : true}
-  },
-  messages: {
-    name: {
-      required: "Введите ваше имя!",
-      minlength: "Введите не менее, чем 2 символа!"
-    },
-    surname: {
-      required: "Введите вашу фамилию!",
-      //number: "Фамилия недолжна содержать цифр!",
-      minlength: "Введите не менее, чем 2 символа!"
-    },
-    patronymic: {
-      required: "Введите ваше отчество!",
-      minlength: "Введите не менее, чем 2 символа!"
-    },
-    comment: {
-      required: "Введите комментарий!"
-    },
-    email: {
-      required: "Вы неуказали email для отправки!",
-      email: "Введите правильный email адрес!"
-    },
-    email1: {
-      required: "Вы неуказали ваш email!",
-      email: "Введите правильный email адрес!"
-    },
-    fio: {
-      required: "Вы неуказали ваше ФИО!"
-    },
-    skype: {
-      required: "Вы неуказали ваш skype!"
-    },
-    phone: {
-      required: "Введите 10 значный номер телефона!"
-    }
-  },
-  invalidHandler: function() {
-    $('.form-field input').each(function() {
-      if ($(this).hasClass('error')) {
-        var order_liefd = $(this).parent().attr('id');
-        $(window).scrollTo('#' + order_liefd, 800);
-        return false;
-      };      
-    });    
-  }
-});
+$('.form-for-order').validate();
 //phone mask
 $('.form-field_phone').mask("(999) 999-99-99");
 

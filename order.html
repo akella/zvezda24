@@ -257,73 +257,289 @@
 			<div class="container">
 				<div class="order__title"><span>Шаг 2.</span>Кого, с чем поздравляем ?</div>
 				<ul class="order__type">
-					<li class="active">день рождения/юбилей</li>
-					<li>свадьба</li>
-					<li>корпоратив</li>
-					<li>рождение ребенка</li>
-					<li>иное</li>
+					<li><a class="active" href="order-birthday">день рождения/юбилей</a></li>
+					<li><a href="order-weddings">свадьба</a></li>
+					<li><a href="order-corporate">корпоратив</a></li>
+					<li><a href="order-born-child">рождение ребенка</a></li>
+					<li><a href="order-another">иное</a></li>
 				</ul>
 			</div>	
-			<div class="order__victim">
+			<!-- BEGIN birthday -->			
+			<div class="order__victim order-birthday" style="display: block;">
 				<div class="container">
-					<div id="order-name" class="form-field">
-						<label>Имя<i>*</i></label>
-						<input type="text" placeholder="Александр" name="name">
+					<div class="form-field">
+						<label>Фамилия поздравляемого<i>*</i></label>
+						<input type="text">
 					</div>	
-					<div id="order-surname" class="form-field">
-						<label>Фамилия<i>*</i></label>
-						<input type="text" placeholder="Александр" name="surname">
+					<div class="form-field">
+						<label>Имя поздравляемого<i>*</i></label>
+						<input type="text">
 					</div>	
-					<div id="order-patronymic" class="form-field">
-						<label>Отчество<i>*</i></label>
-						<input type="text" placeholder="Александр" name="patronymic">
+					<div class="form-field">
+						<label>Отчество поздравляемого<i>*</i></label>
+						<input type="text">
 					</div>
 					<div class="form-field">
-						<label>Место рождения / Город</label>
-						<input type="text" placeholder="Александр">
-					</div>
-					<div class="form-field">
-						<label>Пол</label>
+						<label>Пол<i>*</i></label>
 						<div class="form-field__check">
-							<label class="check"><input type="radio" checked="checked" name="sex"><i></i>Мужской</label>
+							<label class="check"><input type="radio" name="sex"><i></i>Мужской</label>
 							<label class="check"><input type="radio" name="sex"><i></i>Женский</label>
 						</div>
 					</div>
 					<div class="form-field">
-						<label>Место работы</label>
-						<input type="text" placeholder="Александр">
+						<label>Место рождения / Город<i>*</i></label>
+						<input type="text">
+					</div>					
+					<div class="form-field">
+						<label>Место работы<i>*</i></label>
+						<input type="text">
 					</div>
-					<div id="order-comment" class="form-field">
-						<label>Комментарии<i>*</i></label>
-						<input type="text" placeholder="Александр" name="comment">
+					<div class="form-field">
+						<label>Комментарии</label>
+						<input type="text">
 					</div>
-					<div id="order-email" class="form-field">
+					<div class="form-field">
 						<label>E-mail для отправки поздравления<i>*</i></label>
-						<input type="text" name="email">
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Телефон<i>*</i></label>
+						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
 					</div>
 				</div>
 			</div>
+			<!-- END birthday -->
+			<!-- BEGIN weddings -->
+			<div class="order__victim order-weddings">
+				<div class="container">
+					<div class="form-field">
+						<label>Фамилия жениха<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Имя жениха<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Отчество жениха<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Место рождения жениха<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Место работы жениха<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Фамилия невесты<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Имя невесты<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Отчество невесты<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Место рождения невесты<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Место работы невесты<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Комментарии</label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>E-mail для отправки поздравления<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Телефон<i>*</i></label>
+						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+					</div>
+				</div>
+			</div>
+			<!-- END weddings -->
+			<!-- BEGIN corporate -->
+			<div class="order__victim order-corporate">
+				<div class="container">
+					<div class="form-field">
+						<label>Название компании<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Год основания<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Вид деятельности<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Акционеры</label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Генеральный директор</label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Комментарии</label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>E-mail для отправки поздравления<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Телефон<i>*</i></label>
+						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+					</div>
+				</div>
+			</div>
+			<!-- END corporate -->
+			<!-- BEGIN born child -->
+			<div class="order__victim order-born-child">
+				<div class="container">
+					<div class="form-field">
+						<label>Фамилия отца<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Имя отца<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Отчество отца<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Место рождения отца<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Место работы отца<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Фамилия матери<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Имя матери<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Отчество матери<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Место рождения матери<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Место работы матери<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Имя ребенка<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Пол<i>*</i></label>
+						<div class="form-field__check">
+							<label class="check"><input type="radio" name="sex"><i></i>Мужской</label>
+							<label class="check"><input type="radio" name="sex"><i></i>Женский</label>
+						</div>
+					</div>
+					<div class="form-field">
+						<label>Комментарии</label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>E-mail для отправки поздравления<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Телефон<i>*</i></label>
+						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+					</div>
+				</div>
+			</div>
+			<!-- END born child -->
+			<!-- BEGIN another -->
+			<div class="order__victim order-another">
+				<div class="container">
+					<div class="form-field">
+						<label>Фамилия поздравляемого<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Имя поздравляемого<i>*</i></label>
+						<input type="text">
+					</div>	
+					<div class="form-field">
+						<label>Отчество поздравляемого<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Пол<i>*</i></label>
+						<div class="form-field__check">
+							<label class="check"><input type="radio" name="sex"><i></i>Мужской</label>
+							<label class="check"><input type="radio" name="sex"><i></i>Женский</label>
+						</div>
+					</div>
+					<div class="form-field">
+						<label>Место рождения / Город<i>*</i></label>
+						<input type="text">
+					</div>					
+					<div class="form-field">
+						<label>Место работы<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Комментарии</label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>E-mail для отправки поздравления<i>*</i></label>
+						<input type="text">
+					</div>
+					<div class="form-field">
+						<label>Телефон<i>*</i></label>
+						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+					</div>
+				</div>
+			</div>
+			<!-- END another -->
 		</div>
 		<!-- END .step2 -->
 		<!-- BEGIN .step3 -->
 		<div class="order order_step3">
 			<div class="container">
 				<div class="order__title"><span>Шаг 3.</span>Кто заказчик?</div>
-				<div id="order-fio" class="form-field">
+				<div class="form-field">
 					<label>Ваше ФИО<i>*</i></label>
-					<input type="text" placeholder="Александр" name="fio">
+					<input type="text">
 				</div>
-				<div id="order-phone" class="form-field form-field_bg">
+				<div class="form-field">
 					<label>Ваш мобильный телефон<i>*</i></label>
 					<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
 				</div>
-				<div id="order-email1" class="form-field">
+				<div class="form-field">
 					<label>Ваш E-mail<i>*</i></label>
-					<input type="text" placeholder="Александр" name="email1">
+					<input type="text">
 				</div>
-				<div id="order-skype" class="form-field">
+				<div class="form-field">
 					<label>Ваш Skype<i>*</i></label>
-					<input type="text" placeholder="Александр" name="skype">
+					<input type="text">
 				</div>
 			</div>
 		</div>
@@ -333,7 +549,7 @@
 			<div class="container">
 				<div class="order__title"><span>Шаг 4.</span>оплата</div>
 				<div class="order__agree">
-					<label class="check"><input type="checkbox" checked="checked"><i></i>Я согласен с <a href="#"	>	договором</a></label>
+					<label class="check"><input type="checkbox" checked="checked"><i></i>Я согласен с <a href="#">договором</a></label>
 					<span>Система оплаты может снимать дополнительную комиссию.<i></i></span>
 				</div>
 				<div class="order__payment">
@@ -365,7 +581,6 @@
 				<li><a href="#">Как это работает?</a></li>
 			</ul>
 		</nav>
-		<div class="creator">Создание - <a href="#">OSG</a></div>
 	</div>
 </div>
 <!-- END .footer -->

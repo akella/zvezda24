@@ -49,7 +49,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 .header .container { position: relative; height: 118px; overflow: hidden; }
 
 .logo { float: left; margin-top: 25px; }
-.logo a { display: block; margin-bottom: 15px; background: url('../img/icons-s1312154069.png') 0 -33px no-repeat; width: 304px; height: 31px; }
+.logo a { display: block; margin-bottom: 15px; background: url('../img/icons-sc707faa97a.png') 0 -33px no-repeat; width: 304px; height: 31px; }
 .logo span { font-size: 18px; color: #515050; text-transform: uppercase; }
 
 .buy-holiday { position: absolute; top: 45px; left: 435px; font-size: 24px; color: #515050; text-transform: uppercase; }
@@ -58,7 +58,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 .contacts li { margin-bottom: 8px; text-align: right; }
 .contacts li:first-child { margin-bottom: 5px; font-size: 32px; color: #000; }
 .contacts span, .contacts a { position: relative; font-size: 14px; color: #9a9a9a; }
-.contacts i { position: absolute; top: 0; left: -20px; background: url('../img/icons-s1312154069.png') 0 -210px no-repeat; width: 15px; height: 15px; }
+.contacts i { position: absolute; top: 0; left: -20px; background: url('../img/icons-sc707faa97a.png') 0 -210px no-repeat; width: 15px; height: 15px; }
 
 .menu { background: #fff; }
 
@@ -69,11 +69,11 @@ table { border-spacing: 0; border-collapse: collapse; }
 .nav a, .filter a { display: block; height: 30px; line-height: 31px; font-size: 24px; color: #515050; text-transform: uppercase; }
 .nav a:hover, .filter a:hover { color: #be0e30; }
 
-.nav ul { margin: 0 -50px 0 -17px; padding: 15px 0 16px 0; }
+.nav { position: relative; margin: 0 -50px 0 -17px; }
+.nav ul { position: relative; padding: 15px 0 16px 0; z-index: 10; }
 .nav li { margin-right: 44px; }
 .nav a { padding: 0 17px; }
-.nav a.active { background: #be0e30; color: #fff; }
-.nav a.active:hover { color: #fff; }
+.nav a.active { color: #fff; }
 
 .filter-wrap { border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; }
 .filter-wrap ul { position: relative; padding: 17px 0 14px 0; z-index: 10; }
@@ -82,7 +82,11 @@ table { border-spacing: 0; border-collapse: collapse; }
 .filter { position: relative; }
 .filter a.active { color: #fff; }
 
-.filter__die { position: absolute; top: 17px; left: 0px; width: 0px; height: 30px; background: #be0e30; z-index: 5; }
+.filter__die, .nav__die { position: absolute; left: 0px; width: 0px; height: 30px; background: #be0e30; z-index: 5; }
+
+.filter__die { top: 17px; }
+
+.nav__die { top: 15px; }
 
 .catalog { display: none; width: 1020px; padding-top: 20px; margin: 0 auto; }
 .catalog ul { margin-bottom: 35px; font-size: 0; }
@@ -98,7 +102,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .catalog__pic { position: relative; margin-bottom: 20px; }
 .catalog__pic img { display: block; }
-.catalog__pic i { display: none; position: absolute; top: 50%; left: 50%; margin: -18px 0 0 -18px; background: url('../img/icons-s1312154069.png') 0 -164px no-repeat; width: 36px; height: 36px; }
+.catalog__pic i { display: none; position: absolute; top: 50%; left: 50%; margin: -18px 0 0 -18px; background: url('../img/icons-sc707faa97a.png') 0 -164px no-repeat; width: 36px; height: 36px; }
 
 .catalog__link { overflow: hidden; }
 .catalog__link a { width: 107px; height: 38px; line-height: 38px; border: 1px solid #e8e8e8; font-size: 18px; text-align: center; color: #515050; }
@@ -122,18 +126,17 @@ table { border-spacing: 0; border-collapse: collapse; }
 .footer__nav li { float: left; margin-left: 45px; }
 .footer__nav a { color: #bcbcbc; text-decoration: underline; }
 
-.creator { position: absolute; top: 45px; right: 0; color: #4d4d4d; }
-.creator a { color: #4d4d4d; text-decoration: underline; }
-
 .video { display: none; position: fixed; top: 150px; left: 50%; width: 690px; padding: 20px; margin-left: -370px; background: rgba(0, 0, 0, 0.9); z-index: 200; }
 
 .video__close { position: absolute; top: 0; right: 0; width: 21px; height: 21px; background: none; }
-.video__close i { display: block; margin: 6px; background: url('../img/icons-s1312154069.png') 0 -307px no-repeat; width: 9px; height: 9px; }
+.video__close i { display: block; margin: 6px; background: url('../img/icons-sc707faa97a.png') 0 -307px no-repeat; width: 9px; height: 9px; }
 
 .video__title { padding-bottom: 20px; text-align: center; font-size: 24px; color: #fff; text-transform: uppercase; }
 
 .video__order { padding-top: 20px; text-align: center; }
 .video__order a { display: inline-block; height: 60px; padding: 0 90px; background: #be0e30; font-size: 30px; color: #fff; line-height: 60px; font-family: 'Cuprum', Tahoma, Arial, sans-serif; text-transform: uppercase; }
+
+.opacity { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; z-index: 190; }
 
 .form-field { margin-bottom: 20px; overflow: hidden; }
 .form-field label, .form-field span { float: left; height: 40px; line-height: 40px; }
@@ -148,9 +151,10 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .form-field__check { padding: 8px 0; overflow: hidden; }
 .form-field__check label { width: auto; margin-right: 30px; height: 23px; line-height: 23px; font-size: 14px; }
+.form-field__check i { margin: 0; }
 
 .check { position: relative; height: 23px; line-height: 23px; padding-left: 40px; font-family: Arial, Tahoma, sans-serif; font-size: 14px; color: #8e8e8e; cursor: pointer; }
 .check i, .check input { position: absolute; top: 0; left: 0; width: 23px; height: 23px; }
 .check input { opacity: 0; z-index: 10; }
-.check input[type="checkbox"] + i, .check input[type="radio"] + i { background: url('../img/icons-s1312154069.png') 0 -326px no-repeat; width: 23px; height: 23px; }
-.check input[type="checkbox"]:checked + i, .check input[type="radio"]:checked + i { background: url('../img/icons-s1312154069.png') 0 -235px no-repeat; width: 23px; height: 23px; }
+.check input[type="checkbox"] + i, .check input[type="radio"] + i { background: url('../img/icons-sc707faa97a.png') 0 -326px no-repeat; width: 23px; height: 23px; }
+.check input[type="checkbox"]:checked + i, .check input[type="radio"]:checked + i { background: url('../img/icons-sc707faa97a.png') 0 -235px no-repeat; width: 23px; height: 23px; }
