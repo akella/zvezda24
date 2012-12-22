@@ -260,7 +260,7 @@
 					<li><a class="active" href="order-birthday">день рождения/юбилей</a></li>
 					<li><a href="order-weddings">свадьба</a></li>
 					<li><a href="order-corporate">корпоратив</a></li>
-					<li><a href="order-born-child">рождение ребенка</a></li>
+					<li><a href="order-child">рождение ребенка</a></li>
 					<li><a href="order-another">иное</a></li>
 				</ul>
 			</div>	
@@ -269,42 +269,42 @@
 				<div class="container">
 					<div class="form-field">
 						<label>Фамилия поздравляемого<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="birthday_surname">
 					</div>	
 					<div class="form-field">
 						<label>Имя поздравляемого<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="birthday_name">
 					</div>	
 					<div class="form-field">
 						<label>Отчество поздравляемого<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="birthday_patronymic">
 					</div>
 					<div class="form-field">
 						<label>Пол<i>*</i></label>
 						<div class="form-field__check">
-							<label class="check"><input type="radio" name="sex"><i></i>Мужской</label>
-							<label class="check"><input type="radio" name="sex"><i></i>Женский</label>
+							<label class="check"><input type="radio" name="birthday_sex" checked><i></i>Мужской</label>
+							<label class="check"><input type="radio" name="birthday_sex"><i></i>Женский</label>
 						</div>
 					</div>
 					<div class="form-field">
 						<label>Место рождения / Город<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="birthday_place_born">
 					</div>					
 					<div class="form-field">
 						<label>Место работы<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="birthday_place_work">
 					</div>
 					<div class="form-field">
 						<label>Комментарии</label>
-						<input type="text">
+						<input type="text" name="birthday_comment">
 					</div>
 					<div class="form-field">
 						<label>E-mail для отправки поздравления<i>*</i></label>
-						<input type="text">
+						<input class="required email" type="text" name="birthday_email">
 					</div>
 					<div class="form-field">
 						<label>Телефон<i>*</i></label>
-						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+						<input class="form-field_phone required" type="text" placeholder="(___) ___-__-__" name="birthday_phone">
 					</div>
 				</div>
 			</div>
@@ -314,55 +314,55 @@
 				<div class="container">
 					<div class="form-field">
 						<label>Фамилия жениха<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="groom_surname">
 					</div>	
 					<div class="form-field">
 						<label>Имя жениха<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="groom_name">
 					</div>	
 					<div class="form-field">
 						<label>Отчество жениха<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="groom_patronymic">
 					</div>
 					<div class="form-field">
 						<label>Место рождения жениха<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="groom_place_born">
 					</div>
 					<div class="form-field">
 						<label>Место работы жениха<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="groom_place_work">
 					</div>
 					<div class="form-field">
 						<label>Фамилия невесты<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="bride_surname">
 					</div>
 					<div class="form-field">
 						<label>Имя невесты<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="bride_name">
 					</div>
 					<div class="form-field">
 						<label>Отчество невесты<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="bride_patronymic">
 					</div>
 					<div class="form-field">
 						<label>Место рождения невесты<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="bride_place_born">
 					</div>
 					<div class="form-field">
 						<label>Место работы невесты<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="bride_place_work">
 					</div>
 					<div class="form-field">
 						<label>Комментарии</label>
-						<input type="text">
+						<input type="text" name="weddings_comment">
 					</div>
 					<div class="form-field">
 						<label>E-mail для отправки поздравления<i>*</i></label>
-						<input type="text">
+						<input class="required email" type="text" name="weddings_email">
 					</div>
 					<div class="form-field">
 						<label>Телефон<i>*</i></label>
-						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+						<input class="form-field_phone required" type="text" placeholder="(___) ___-__-__" name="weddings_phone">
 					</div>
 				</div>
 			</div>
@@ -372,104 +372,104 @@
 				<div class="container">
 					<div class="form-field">
 						<label>Название компании<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="company_name">
 					</div>	
 					<div class="form-field">
 						<label>Год основания<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="company_date_born">
 					</div>
 					<div class="form-field">
 						<label>Вид деятельности<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="company_type">
 					</div>
 					<div class="form-field">
 						<label>Акционеры</label>
-						<input type="text">
+						<input class="required" type="text" name="company_actioners">
 					</div>
 					<div class="form-field">
 						<label>Генеральный директор</label>
-						<input type="text">
+						<input class="required" type="text" name="company_director">
 					</div>	
 					<div class="form-field">
 						<label>Комментарии</label>
-						<input type="text">
+						<input type="text" name="company_comment">
 					</div>
 					<div class="form-field">
 						<label>E-mail для отправки поздравления<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="company_email">
 					</div>
 					<div class="form-field">
 						<label>Телефон<i>*</i></label>
-						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+						<input  class="form-field_phone required" type="text" placeholder="(___) ___-__-__" name="company_phone">
 					</div>
 				</div>
 			</div>
 			<!-- END corporate -->
 			<!-- BEGIN born child -->
-			<div class="order__victim order-born-child">
+			<div class="order__victim order-child">
 				<div class="container">
 					<div class="form-field">
 						<label>Фамилия отца<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_father_surname">
 					</div>	
 					<div class="form-field">
 						<label>Имя отца<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_father_name">
 					</div>	
 					<div class="form-field">
 						<label>Отчество отца<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_father_patronymic">
 					</div>	
 					<div class="form-field">
 						<label>Место рождения отца<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_father_place_born">
 					</div>	
 					<div class="form-field">
 						<label>Место работы отца<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_father_place_work">
 					</div>	
 					<div class="form-field">
 						<label>Фамилия матери<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_mother_surname">
 					</div>	
 					<div class="form-field">
 						<label>Имя матери<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_mother_name">
 					</div>	
 					<div class="form-field">
 						<label>Отчество матери<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_mother_patronymic">
 					</div>	
 					<div class="form-field">
 						<label>Место рождения матери<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text"  name="child_mother_place_born">
 					</div>	
 					<div class="form-field">
 						<label>Место работы матери<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_mother_place_work">
 					</div>	
 					<div class="form-field">
 						<label>Имя ребенка<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="child_name">
 					</div>	
 					<div class="form-field">
 						<label>Пол<i>*</i></label>
 						<div class="form-field__check">
-							<label class="check"><input type="radio" name="sex"><i></i>Мужской</label>
-							<label class="check"><input type="radio" name="sex"><i></i>Женский</label>
+							<label class="check"><input type="radio" name="child_sex" checked><i></i>Мужской</label>
+							<label class="check"><input type="radio" name="child_sex"><i></i>Женский</label>
 						</div>
 					</div>
 					<div class="form-field">
 						<label>Комментарии</label>
-						<input type="text">
+						<input type="text" name="child_comment">
 					</div>
 					<div class="form-field">
 						<label>E-mail для отправки поздравления<i>*</i></label>
-						<input type="text">
+						<input class="required email" type="text" name="child_email">
 					</div>
 					<div class="form-field">
 						<label>Телефон<i>*</i></label>
-						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+						<input class="form-field_phone required" type="text" placeholder="(___) ___-__-__" name="child_phone">
 					</div>
 				</div>
 			</div>
@@ -479,42 +479,42 @@
 				<div class="container">
 					<div class="form-field">
 						<label>Фамилия поздравляемого<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="another_surname">
 					</div>	
 					<div class="form-field">
 						<label>Имя поздравляемого<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="another_name">
 					</div>	
 					<div class="form-field">
 						<label>Отчество поздравляемого<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="another_patronymic">
 					</div>
 					<div class="form-field">
 						<label>Пол<i>*</i></label>
 						<div class="form-field__check">
-							<label class="check"><input type="radio" name="sex"><i></i>Мужской</label>
-							<label class="check"><input type="radio" name="sex"><i></i>Женский</label>
+							<label class="check"><input type="radio" name="another_sex" checked="checked"><i></i>Мужской</label>
+							<label class="check"><input type="radio" name="another_sex"><i></i>Женский</label>
 						</div>
 					</div>
 					<div class="form-field">
 						<label>Место рождения / Город<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="another_place_born">
 					</div>					
 					<div class="form-field">
 						<label>Место работы<i>*</i></label>
-						<input type="text">
+						<input class="required" type="text" name="another_place_work">
 					</div>
 					<div class="form-field">
 						<label>Комментарии</label>
-						<input type="text">
+						<input type="text" name="another_comment">
 					</div>
 					<div class="form-field">
 						<label>E-mail для отправки поздравления<i>*</i></label>
-						<input type="text">
+						<input class="required email" type="text" name="another_email">
 					</div>
 					<div class="form-field">
 						<label>Телефон<i>*</i></label>
-						<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+						<input class="form-field_phone required" type="text" placeholder="(___) ___-__-__" name="another_phone">
 					</div>
 				</div>
 			</div>
@@ -527,19 +527,19 @@
 				<div class="order__title"><span>Шаг 3.</span>Кто заказчик?</div>
 				<div class="form-field">
 					<label>Ваше ФИО<i>*</i></label>
-					<input type="text">
+					<input class="required" type="text" name="customer_fio">
 				</div>
 				<div class="form-field">
 					<label>Ваш мобильный телефон<i>*</i></label>
-					<input class="form-field_phone" type="text" placeholder="(___) ___-__-__" name="phone">
+					<input class="form-field_phone required" type="text" placeholder="(___) ___-__-__" name="customer_phone">
 				</div>
 				<div class="form-field">
 					<label>Ваш E-mail<i>*</i></label>
-					<input type="text">
+					<input class="required" type="text" name="customer_email">
 				</div>
 				<div class="form-field">
 					<label>Ваш Skype<i>*</i></label>
-					<input type="text">
+					<input class="required" type="text" name="customer_skype">
 				</div>
 			</div>
 		</div>

@@ -108,7 +108,32 @@ $('.order__type a').click(function() {
 });
 
 //validator form
-$('.form-for-order').validate();
+$('.form-for-order').validate({
+    messages: {
+      birthday_phone: {
+        required: "Введите 10 значный номер телефона"
+      },
+      weddings_phone: {
+        required: "Введите 10 значный номер телефона"
+      },
+      company_phone: {
+        required: "Введите 10 значный номер телефона"
+      },
+      child_phone: {
+        required: "Введите 10 значный номер телефона"
+      },
+      another_phone: {
+        required: "Введите 10 значный номер телефона"
+      },
+      customer_phone: {
+        required: "Введите 10 значный номер телефона"
+      }
+    }
+});
+jQuery.extend(jQuery.validator.messages, {
+  required: "Заполните поле",
+  email: "Введите правильный email адрес" 
+});
 //phone mask
 $('.form-field_phone').mask("(999) 999-99-99");
 

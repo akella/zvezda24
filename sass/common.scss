@@ -480,7 +480,7 @@ table {
 	}
 	span {
 		font-family: Arial, Tahoma, sans-serif;
-		color: #8e8e8e;
+		color: $red;
 	}
 }
 .form-field_bg { 
@@ -489,6 +489,9 @@ table {
 	}		
 }
 .form-field__check {
+	float: left;
+	width: 417px;
+	margin-left: 20px;
 	padding: 8px 0;
 	overflow: hidden;
 	label {

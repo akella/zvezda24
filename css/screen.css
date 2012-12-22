@@ -145,11 +145,11 @@ table { border-spacing: 0; border-collapse: collapse; }
 .form-field input { float: left; width: 385px; height: 38px; margin-right: 20px; padding: 0 15px; border: 1px solid #d1d1d1; }
 .form-field input.error { border-color: #F3A4A4; }
 .form-field i { margin-left: 5px; font-style: normal; color: #be0e30; }
-.form-field span { font-family: Arial, Tahoma, sans-serif; color: #8e8e8e; }
+.form-field span { font-family: Arial, Tahoma, sans-serif; color: #be0e30; }
 
 .form-field_bg input { background: #f6f6f6; }
 
-.form-field__check { padding: 8px 0; overflow: hidden; }
+.form-field__check { float: left; width: 417px; margin-left: 20px; padding: 8px 0; overflow: hidden; }
 .form-field__check label { width: auto; margin-right: 30px; height: 23px; line-height: 23px; font-size: 14px; }
 .form-field__check i { margin: 0; }
 
