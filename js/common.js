@@ -6,7 +6,7 @@ $(window).scroll(function() {
 	var top_height = $('.top-wrap').height();
 	var header_height = $('.header').height();
 	var height = top_height + header_height;
-  if ($('body').scrollTop() > height) {
+  if ($(window).scrollTop() > height) {
   	$('.menu').addClass('menu_fixed');
   	$('.catalog').css('padding-top', nav_height + 20);
   }
