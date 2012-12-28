@@ -89,6 +89,10 @@ $('.open-video').click(function() {
 });
 $('.video__close, .opacity').click(function() {
 	$('.video, .opacity').fadeOut();
+  //example_video_1
+  _V_("example_video_1").pause();
+  //alert('pause');
+  
 });
 
 //datepicker
