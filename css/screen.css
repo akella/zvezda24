@@ -214,10 +214,10 @@ table { border-spacing: 0; border-collapse: collapse; }
 .order__date { position: relative; float: left; width: 645px; height: 325px; }
 
 .order__pic { float: right; }
-.order__pic img { display: block; }
+.order__pic img { display: block; width: 100%; }
 
-.order__attention { position: absolute; left: 0; bottom: 0; height: 42px; padding: 0 17px 0 44px; line-height: 42px; border: 2px solid #be0e30; font-family: Arial, Tahoma, sans-serif; color: #515050; }
-.order__attention i { position: absolute; top: 6px; left: 20px; background: url('../img/icons-sc707faa97a.png') 0 -268px no-repeat; width: 6px; height: 29px; }
+.order__attention { position: relative; margin-top: 20px; width: 244px; padding: 10px 17px 10px 44px; line-height: 1.4; border: 2px solid #be0e30; font-family: Arial, Tahoma, sans-serif; color: #515050; }
+.order__attention i { position: absolute; top: 10px; left: 20px; background: url('../img/icons-sc707faa97a.png') 0 -268px no-repeat; width: 6px; height: 29px; }
 
 .order_step1 { margin-bottom: 50px; overflow: hidden; }
 
@@ -248,11 +248,12 @@ table { border-spacing: 0; border-collapse: collapse; }
 .order__payment span { color: #4c4c4c; }
 
 .datepicker { margin-right: -30px; overflow: hidden; }
-.datepicker li { float: left; width: 202px; margin-right: 20px; }
+.datepicker li { float: left; width: 313px; margin-right: 20px; }
 .datepicker table { width: 100%; border-spacing: 1px; color: #777676; }
-.datepicker th { width: 28px; height: 28px; text-align: center; font-size: 14px; font-weight: normal; }
-.datepicker span { display: block; width: 28px; height: 28px; margin: 0 1px 1px 0; line-height: 28px; text-align: center; background: #f6f6f6; font-family: Arial, Tahoma, sans-serif; cursor: pointer; }
+.datepicker th { width: 42px; height: 42px; text-align: center; font-size: 16px; font-weight: normal; }
+.datepicker span { display: block; width: 42px; height: 42px; margin: 0 1px 1px 0; line-height: 42px; text-align: center; background: #f6f6f6; font-family: Arial, Tahoma, sans-serif; cursor: pointer; }
 .datepicker span:hover { color: #be0e30; }
+.datepicker tbody tr:first-child td span { background: #c7c7c7; color: #fff; }
 .datepicker .no-active { color: #cbcbcb; }
 .datepicker .active { background: #be0e30; color: #fff; }
 .datepicker .active:hover { color: #fff; }

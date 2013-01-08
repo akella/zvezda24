@@ -38,21 +38,24 @@
 	float: right;
 	img {
 		display: block;
+		width: 100%;
 	}
 }
 .order__attention {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 42px;
-	padding: 0 17px 0 44px;
-	line-height: 42px;
+// 	position: absolute;
+// 	left: 0;
+// 	bottom: 0;
+position: relative;
+margin-top: 20px;
+width: 300px - 17px - 44px + 5px;
+	padding: 10px 17px 10px 44px;
+	line-height: 1.4;
 	border: 2px solid $red;
 	font-family: Arial, Tahoma, sans-serif;
 	color: #515050; 
 	i {
 		position: absolute;
-		top: 6px;
+		top: 10px;
 		left: 20px;
 		@include sized-sprite($icons, att);
 	}
@@ -178,7 +181,7 @@
 	overflow: hidden;
 	li {
 		float: left;
-		width: 202px;
+		width: 313px;
 		margin-right: 20px;
 	}	
 	table {
@@ -187,18 +190,18 @@
 		color: #777676;
 	}
 	th {
-		width: 28px;
-		height: 28px;
+		width: 42px;
+		height: 42px;
 		text-align: center;
-		font-size: 14px;		
+		font-size: 16px;		
 		font-weight: normal;
 	}
 	span {
 		display: block;
-		width: 28px;
-		height: 28px;
+		width: 42px;
+		height: 42px;
 		margin: 0 1px 1px 0;
-		line-height: 28px;
+		line-height: 42px;
 		text-align: center;
 		background: #f6f6f6;
 		font-family: Arial, Tahoma, sans-serif;
@@ -207,6 +210,19 @@
 			color: $red;
 		}
 	}	
+	tbody {
+		tr{
+		   	&:first-child{
+		      td{
+		         
+		         span{
+		            background: #c7c7c7;
+		            color: #fff;
+		         }
+		      }
+		   }
+		}
+	}
 	.no-active {
 		color: #cbcbcb;
 	}
