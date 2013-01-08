@@ -462,7 +462,7 @@ table {
 			color: $red;
 		}
 	}
-	input {
+	input,textarea {
 		float: left;
 		width: 385px;
 		height: 38px;
@@ -473,6 +473,15 @@ table {
 		&.error {
 			border-color: #F3A4A4;
 		}
+	}
+	.form-note{
+	   color: #333;
+	}
+	textarea{
+	   height: 140px;
+	   width: 648px;
+	   margin-right: 0;
+	   padding: 10px 15px;
 	}
 	i {
 		margin-left: 5px;
