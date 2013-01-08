@@ -8,11 +8,11 @@ $(window).scroll(function() {
 	var height = top_height + header_height;
   if ($(window).scrollTop() > height) {
   	$('.menu').addClass('menu_fixed');
-  	$('.catalog').css('padding-top', nav_height + 20);
+  	$('.catalog,.contetarea').css('padding-top', nav_height + 20);
   }
   else {
   	$('.menu').removeClass('menu_fixed');
-  	$('.catalog').css('padding-top', '20px');
+  	$('.catalog,.contetarea').css('padding-top', '20px');
   }
 });
 
