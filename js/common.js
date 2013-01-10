@@ -1,5 +1,12 @@
 $(document).ready(function() {
-
+$('.order__agree a').click(function(e) {
+  $('.oferta').show();
+  return false;
+});
+$('.oferta__close').click(function(e) {
+  $('.oferta').hide();
+  return false;
+});
 //fixed menu
 $(window).scroll(function() {
 	var nav_height = $('.menu').height();

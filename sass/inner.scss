@@ -353,3 +353,46 @@ width: 300px - 17px - 44px + 5px;
 
    }
 }
+.oferta{
+   z-index: 1000;
+   top: 100px;
+   padding: 20px;
+   width: 600px;
+   left: 50%;
+   margin-left: -300px;
+   position: fixed;
+   font-size: 14px;
+   line-height: 1.4;
+   background: #fff;
+   border-radius: 10px;
+   box-shadow:0 0 10px rgba(black,.4);
+   overflow: auto;
+   .oferta__close{
+      position: absolute;
+      top: 4px;
+      right: 5px;
+      line-height: 1;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover{
+         color: #c00;
+      }
+   }
+   .oferta__content{
+      height: 400px;
+      overflow: auto;
+   }
+   h2{
+      font-size: 20px;
+      margin-bottom: 0;
+      margin-top: 10px;
+   }
+   h3{
+      font-size: 16px;
+      margin-bottom: 0;
+      margin-top: 10px;
+   }
+   p{
+      margin-bottom: 1em;
+   }
+}

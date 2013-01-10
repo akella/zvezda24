@@ -81,3 +81,11 @@
 .form__captcha label { display: block; font-size: 18px; color: #515050; height: 30px; }
 .form__captcha input { position: absolute; bottom: -40px; left: 0; width: 219px; height: 38px; margin-right: 20px; padding: 0 15px; border: 1px solid #d1d1d1; font-size: 14px; }
 .form__captcha input.error { border-color: #F3A4A4; }
+
+.oferta { z-index: 1000; top: 100px; padding: 20px; width: 600px; left: 50%; margin-left: -300px; position: fixed; font-size: 14px; line-height: 1.4; background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); overflow: auto; }
+.oferta .oferta__close { position: absolute; top: 4px; right: 5px; line-height: 1; font-size: 20px; cursor: pointer; }
+.oferta .oferta__close:hover { color: #c00; }
+.oferta .oferta__content { height: 400px; overflow: auto; }
+.oferta h2 { font-size: 20px; margin-bottom: 0; margin-top: 10px; }
+.oferta h3 { font-size: 16px; margin-bottom: 0; margin-top: 10px; }
+.oferta p { margin-bottom: 1em; }
