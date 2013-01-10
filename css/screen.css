@@ -85,6 +85,8 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .filter { position: relative; }
 .filter a.active { color: #fff; }
+.filter .inactive { color: #ccc; }
+.filter .inactive:hover { color: #ccc; }
 
 .filter__die, .nav__die { position: absolute; left: 0px; width: 0px; height: 30px; background: #be0e30; z-index: 5; }
 
@@ -132,7 +134,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .video { display: none; position: fixed; top: 150px; left: 50%; width: 690px; padding: 20px; margin-left: -370px; background: rgba(0, 0, 0, 0.9); z-index: 200; }
 
-.video__close { position: absolute; top: 0; right: 0; width: 21px; height: 21px; background: none; }
+.video__close { cursor: pointer; position: absolute; top: 0; right: 0; width: 21px; height: 21px; background: none; }
 .video__close i { display: block; margin: 6px; background: url('../img/icons-sc707faa97a.png') 0 -307px no-repeat; width: 9px; height: 9px; }
 
 .video__title { padding-bottom: 20px; text-align: center; font-size: 24px; color: #fff; text-transform: uppercase; }
@@ -289,6 +291,8 @@ table { border-spacing: 0; border-collapse: collapse; }
 .oferta h2 { font-size: 20px; margin-bottom: 0; margin-top: 10px; }
 .oferta h3 { font-size: 16px; margin-bottom: 0; margin-top: 10px; }
 .oferta p { margin-bottom: 1em; }
+
+.hrhr { border-top: 4px solid #ccc; margin: 10px 0 20px; }
 
 .ie7 .catalog li { display: inline; zoom: 1; }
 .ie7 .video__close { zoom: 1; }

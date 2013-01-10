@@ -237,6 +237,12 @@ table {
 			color: #fff;
 		}
 	}
+	.inactive{
+	   color: #ccc;
+	   &:hover{
+	      color: #ccc;
+	   }
+	}
 }
 .filter__die, .nav__die {
   position: absolute;  
@@ -396,6 +402,7 @@ table {
 	z-index: 200;
 }
 .video__close {
+	cursor: pointer;
 	position: absolute;
 	top: 0;
 	right: 0;
