@@ -93,11 +93,12 @@ table { border-spacing: 0; border-collapse: collapse; }
 .catalog { display: none; width: 1020px; padding-top: 20px; margin: 0 auto; }
 .catalog ul { margin-bottom: 35px; font-size: 0; }
 .catalog li { position: relative; display: inline-block; width: 230px; margin-right: -20px; padding: 20px; z-index: 5; }
-.catalog li:hover { background: #f4f4f4; z-index: 10; -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; }
-.catalog li:hover .catalog__link a { border-color: #747474; }
-.catalog li:hover .catalog__link a:hover { border-color: #be0e30; }
-.catalog li:hover .catalog__name a { color: #be0e30; }
-.catalog li:hover .catalog__pic i { display: block; }
+
+.no-touch li:hover { background: #f4f4f4; z-index: 10; -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; }
+.no-touch li:hover .catalog__link a { border-color: #747474; }
+.no-touch li:hover .catalog__link a:hover { border-color: #be0e30; }
+.no-touch li:hover .catalog__name a { color: #be0e30; }
+.no-touch li:hover .catalog__pic i { display: block; }
 
 .catalog__name { display: block; margin-bottom: 15px; text-align: center; }
 .catalog__name a { font-size: 18px; color: #000; text-transform: uppercase; }

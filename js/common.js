@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  if (!("ontouchstart" in document.documentElement)) {
+    document.documentElement.className += " no-touch";
+}
 $('.order__agree a').click(function(e) {
   $('.oferta').show();
   return false;

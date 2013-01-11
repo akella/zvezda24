@@ -275,6 +275,33 @@ table {
 		margin-right: -20px;
 		padding: 20px;
 		z-index: 5;
+// 		&:hover {
+// 			background: #f4f4f4;
+// 			z-index: 10;
+// 			@include box-shadow(rgba(0,0,0,0.6) 0 0 4px);
+// 			.catalog__link {
+// 				a {
+// 					border-color: #747474;
+// 					&:hover {
+// 						border-color: $red;
+// 					}
+// 				}				
+// 			}
+// 			.catalog__name {
+// 				a {
+// 					color: #be0e30;
+// 				}				
+// 			}
+// 			.catalog__pic {
+// 				i {
+// 					display: block;
+// 				}
+// 			}
+// 		}
+	}
+}
+.no-touch{
+	li {
 		&:hover {
 			background: #f4f4f4;
 			z-index: 10;
