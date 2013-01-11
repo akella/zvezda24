@@ -301,6 +301,7 @@ table {
 	}
 }
 .no-touch{
+	.catalog {
 	li {
 		&:hover {
 			background: #f4f4f4;
@@ -326,6 +327,7 @@ table {
 			}
 		}
 	}
+}
 }
 .catalog__name {
 	display: block;
@@ -417,6 +419,14 @@ table {
 	}
 }
 //video
+.video__back{
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 199;
+}
 .video {
 	display: none;
 	position: fixed;

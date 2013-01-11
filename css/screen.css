@@ -98,11 +98,11 @@ table { border-spacing: 0; border-collapse: collapse; }
 .catalog ul { margin-bottom: 35px; font-size: 0; }
 .catalog li { position: relative; display: inline-block; width: 230px; margin-right: -20px; padding: 20px; z-index: 5; }
 
-.no-touch li:hover { background: #f4f4f4; z-index: 10; -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; }
-.no-touch li:hover .catalog__link a { border-color: #747474; }
-.no-touch li:hover .catalog__link a:hover { border-color: #be0e30; }
-.no-touch li:hover .catalog__name a { color: #be0e30; }
-.no-touch li:hover .catalog__pic i { display: block; }
+.no-touch .catalog li:hover { background: #f4f4f4; z-index: 10; -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px; }
+.no-touch .catalog li:hover .catalog__link a { border-color: #747474; }
+.no-touch .catalog li:hover .catalog__link a:hover { border-color: #be0e30; }
+.no-touch .catalog li:hover .catalog__name a { color: #be0e30; }
+.no-touch .catalog li:hover .catalog__pic i { display: block; }
 
 .catalog__name { display: block; margin-bottom: 15px; text-align: center; }
 .catalog__name a { font-size: 18px; color: #000; text-transform: uppercase; }
@@ -132,6 +132,8 @@ table { border-spacing: 0; border-collapse: collapse; }
 .footer__nav ul { overflow: hidden; }
 .footer__nav li { float: left; margin-left: 45px; }
 .footer__nav a { color: #bcbcbc; text-decoration: underline; }
+
+.video__back { position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 199; }
 
 .video { display: none; position: fixed; top: 150px; left: 50%; width: 690px; padding: 20px; margin-left: -370px; background: rgba(0, 0, 0, 0.9); z-index: 200; }
 
