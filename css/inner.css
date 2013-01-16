@@ -11,7 +11,7 @@
 .order__title { padding-bottom: 10px; border-bottom: 3px solid #d1d1d1; font-size: 24px; color: #000; text-transform: uppercase; }
 .order__title span { margin-right: 5px; color: #be0e30; }
 
-.order__date { position: relative; float: left; width: 645px; height: 325px; }
+.order__date { position: relative; float: left; width: 645px; height: 340px; }
 
 .order__pic { float: right; }
 .order__pic img { display: block; width: 100%; }

@@ -151,4 +151,9 @@ jQuery.extend(jQuery.validator.messages, {
 //phone mask
 $('.form-field_phone').mask("(999) 999-99-99");
 
+//open nav
+$('.filter li:last a').click(function() {
+  $('.nav-wrap').slideDown();
+});
+
 });

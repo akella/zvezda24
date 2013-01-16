@@ -69,15 +69,17 @@ table { border-spacing: 0; border-collapse: collapse; }
 .nav a, .filter a { display: block; height: 30px; line-height: 31px; font-size: 24px; color: #515050; text-transform: uppercase; }
 .nav a:hover, .filter a:hover { color: #be0e30; }
 
+.nav-wrap { display: none; border-bottom: 1px solid #d9d9d9; }
+
 .nav { position: relative; margin: 0 -50px 0 -17px; }
 .nav ul { position: relative; padding: 15px 0 16px 0; z-index: 10; }
 .nav li { margin-right: 44px; }
 .nav a { padding: 0 17px; }
 .nav a.active { color: #fff; }
 
-.filter-wrap { border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; }
+.filter-wrap { border-bottom: 1px solid #d9d9d9; }
 .filter-wrap ul { position: relative; padding: 17px 0 14px 0; z-index: 10; }
-.filter-wrap a { padding: 0 9px; }
+.filter-wrap a { padding: 0 8px; }
 
 .filter { position: relative; }
 .filter a.active { color: #fff; }
