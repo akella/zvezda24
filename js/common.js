@@ -1,7 +1,80 @@
 $(document).ready(function() {
   if (!("ontouchstart" in document.documentElement)) {
     document.documentElement.className += " no-touch";
-}
+  }
+
+//fonts load
+WebFontConfig = { google: { families: [ 'Cuprum:400,700:latin,cyrillic' ] } , active : function() { 
+  //
+  $('.filter').each(function() {
+    var method = 'easeInExpo',
+        topMenu = $('.filter'),
+        activeMenu = $('.active',topMenu),
+        mainlevel = $('a',topMenu),
+        animMenu = $('.filter__die');
+    
+    var animFunc = function(el) {
+      var menuWidth = el.outerWidth();
+      var menuLeft = el.position().left;
+      animMenu.stop(true).animate({
+        left: menuLeft,
+        width: menuWidth
+      }, 300, method);
+    }  
+    // если есть активный пункт меню, то позиционируем двигающуюся плашку на нем
+    animFunc(activeMenu);
+    // поведение движущейся плашки при наведении на любой пункт меню. Все тоже самое, что и при наличии активного пункта, только позиция плашки определяется относительно пункта, на который произошло наведение курсора мыши
+    mainlevel.click(function() {
+      mainlevel.removeClass('active');    
+      animFunc($(this));
+      $(this).delay(300).queue(function(next){
+        $(this).addClass("active");
+        next();
+      });
+      return false;
+    })    
+  })
+  //
+  $('.nav').each(function() {
+    var method = 'easeInExpo',
+        topMenu = $('.nav'),
+        activeMenu = $('.active',topMenu),
+        mainlevel = $('a',topMenu),
+        animMenu = $('.nav__die');
+    
+    var animFunc = function(el) {
+      var menuWidth = el.outerWidth();
+      var menuLeft = el.position().left;
+      animMenu.stop(true).animate({
+        left: menuLeft,
+        width: menuWidth
+      }, 300, method);
+    }  
+    // если есть активный пункт меню, то позиционируем двигающуюся плашку на нем
+    animFunc(activeMenu);
+    // поведение движущейся плашки при наведении на любой пункт меню. Все тоже самое, что и при наличии активного пункта, только позиция плашки определяется относительно пункта, на который произошло наведение курсора мыши
+    mainlevel.click(function() {
+      mainlevel.removeClass('active');    
+      animFunc($(this));
+      $(this).delay(300).queue(function(next){
+        $(this).addClass("active");
+        next();
+      });
+      return false;
+    })    
+  })
+} };
+(function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+})();
+
+
+
 $('.order__agree a').click(function(e) {
   $('.oferta').show();
   return false;
@@ -33,64 +106,6 @@ $('.filter a').click(function() {
 	$('.'+catalog).fadeIn(300);  
 	return false;
 });
-//
-$('.filter').each(function() {
-  var method = 'easeInExpo',
-      topMenu = $('.filter'),
-      activeMenu = $('.active',topMenu),
-      mainlevel = $('a',topMenu),
-      animMenu = $('.filter__die');
-  
-  var animFunc = function(el) {
-  	var menuWidth = el.outerWidth();
-  	var menuLeft = el.position().left;
-  	animMenu.stop(true).animate({
-  	  left: menuLeft,
-  	  width: menuWidth
-  	}, 300, method);
-  }  
-  // если есть активный пункт меню, то позиционируем двигающуюся плашку на нем
-  animFunc(activeMenu);
-  // поведение движущейся плашки при наведении на любой пункт меню. Все тоже самое, что и при наличии активного пункта, только позиция плашки определяется относительно пункта, на который произошло наведение курсора мыши
-  mainlevel.click(function() {
-    mainlevel.removeClass('active');    
-    animFunc($(this));
-    $(this).delay(300).queue(function(next){
-      $(this).addClass("active");
-      next();
-    });
-    return false;
-  })    
-})
-//
-$('.nav').each(function() {
-  var method = 'easeInExpo',
-      topMenu = $('.nav'),
-      activeMenu = $('.active',topMenu),
-      mainlevel = $('a',topMenu),
-      animMenu = $('.nav__die');
-  
-  var animFunc = function(el) {
-    var menuWidth = el.outerWidth();
-    var menuLeft = el.position().left;
-    animMenu.stop(true).animate({
-      left: menuLeft,
-      width: menuWidth
-    }, 300, method);
-  }  
-  // если есть активный пункт меню, то позиционируем двигающуюся плашку на нем
-  animFunc(activeMenu);
-  // поведение движущейся плашки при наведении на любой пункт меню. Все тоже самое, что и при наличии активного пункта, только позиция плашки определяется относительно пункта, на который произошло наведение курсора мыши
-  mainlevel.click(function() {
-    mainlevel.removeClass('active');    
-    animFunc($(this));
-    $(this).delay(300).queue(function(next){
-      $(this).addClass("active");
-      next();
-    });
-    return false;
-  })    
-})
 
 //video
 $('.open-video').click(function() {
@@ -153,7 +168,10 @@ $('.form-field_phone').mask("(999) 999-99-99");
 
 //open nav
 $('.filter li:last a').click(function() {
-  $('.nav-wrap').slideDown();
+  $('.nav-wrap').animate({
+    height: "61px",
+    borderWidth: "0 0 1px 0"
+  }, 300 );
 });
 
 });
