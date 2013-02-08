@@ -18,7 +18,8 @@
 	<script src="js/video.min.js"></script>	
 	<script src="js/jquery.scrollTo-min.js"></script>	
 	<script src="js/jquery.validate.min.js"></script>	
-	<script src="js/jquery.maskedinput-1.2.2.js"></script>					
+	<script src="js/jquery.maskedinput-1.2.2.js"></script>	
+	<script src="js/jquery-ui-1.10.0.custom.min.js"></script>						
 	<script src="js/common.js"></script>
 </head>
 <body id="top">
@@ -65,137 +66,14 @@
 		<div class="container">
 			<div class="order order_step1">		
 				<div class="order__date">
-					<div class="order__title"><span>Шаг 1.</span>Выберите дату мероприятия</div>
-					<ul class="datepicker">
-						<li>
-							<div class="datepicker__month">Октябрь</div>
-							<table>
-								<thead>
-								<tr>
-									<th>пн</th>
-									<th>вт</th>
-									<th>ср</th>
-									<th>чт</th>
-									<th>пт</th>
-									<th>сб</th>
-									<th>вс</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<td></td>
-									<td></td>
-									<td><span class="no-active">1</span></td>
-									<td><span class="no-active">2</span></td>
-									<td><span class="no-active">3</span></td>
-									<td><span class="no-active">4</span></td>
-									<td><span class="no-active">5</span></td>							
-								</tr>
-								<tr>
-									<td><span class="no-active">6</span></td>
-									<td><span class="no-active active">7</span></td>
-									<td><span class="no-active">8</span></td>
-									<td><span class="no-active">9</span></td>
-									<td><span class="no-active">10</span></td>
-									<td><span class="no-active">11</span></td>
-									<td><span class="no-active">12</span></td>
-								</tr>
-								<tr>
-									<td><span class="no-active">13</span></td>
-									<td><span class="no-active">14</span></td>
-									<td><span>15</span></td>
-									<td><span>16</span></td>
-									<td><span>17</span></td>
-									<td><span>18</span></td>
-									<td><span>19</span></td>
-								</tr>
-								<tr>
-									<td><span>20</span></td>
-									<td><span>21</span></td>
-									<td><span>22</span></td>
-									<td><span>23</span></td>
-									<td><span>24</span></td>
-									<td><span>25</span></td>
-									<td><span>26</span></td>
-								</tr>
-								<tr>
-									<td><span>27</span></td>
-									<td><span>28</span></td>
-									<td><span>29</span></td>
-									<td><span>30</span></td>
-									<td><span>31</span></td>
-									<td></td>
-									<td></td>
-								</tr>
-								</tbody>
-							</table>
-						</li>
-						<li>
-							<div class="datepicker__month">Ноябрь</div>
-							<table>
-								<thead>
-								<tr>
-									<th>пн</th>
-									<th>вт</th>
-									<th>ср</th>
-									<th>чт</th>
-									<th>пт</th>
-									<th>сб</th>
-									<th>вс</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<td></td>
-									<td></td>
-									<td><span>1</span></td>
-									<td><span>2</span></td>
-									<td><span>3</span></td>
-									<td><span>4</span></td>
-									<td><span>5</span></td>							
-								</tr>
-								<tr>
-									<td><span>6</span></td>
-									<td><span>7</span></td>
-									<td><span>8</span></td>
-									<td><span>9</span></td>
-									<td><span>10</span></td>
-									<td><span>11</span></td>
-									<td><span>12</span></td>
-								</tr>
-								<tr>
-									<td><span>13</span></td>
-									<td><span>14</span></td>
-									<td><span>15</span></td>
-									<td><span>16</span></td>
-									<td><span>17</span></td>
-									<td><span>18</span></td>
-									<td><span>19</span></td>
-								</tr>
-								<tr>
-									<td><span>20</span></td>
-									<td><span>21</span></td>
-									<td><span>22</span></td>
-									<td><span>23</span></td>
-									<td><span>24</span></td>
-									<td><span>25</span></td>
-									<td><span>26</span></td>
-								</tr>
-								<tr>
-									<td><span>27</span></td>
-									<td><span>28</span></td>
-									<td><span>29</span></td>
-									<td><span>30</span></td>
-									<td><span>31</span></td>
-									<td></td>
-									<td></td>
-								</tr>
-								</tbody>
-							</table>
-						</li>
-			
-					</ul>
-					
+					<div class="order__title">
+						<span>Шаг 1.</span>Выберите дату мероприятия
+						<div class="order__nav">
+							<button class="order__prev"></button>
+							<button class="order__next"></button>
+						</div>
+					</div>						
+					<div class="order__calendars"></div>
 				</div>
 				<div class="order__pic">
 					<img src="img/pic2.jpg" height="270" alt="">

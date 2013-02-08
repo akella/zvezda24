@@ -74,7 +74,7 @@ WebFontConfig = { google: { families: [ 'Cuprum:400,700:latin,cyrillic' ] } , ac
 })();
 
 
-
+$('.oferta').hide(); ////////////////////////////////////////////
 $('.order__agree a').click(function(e) {
   $('.oferta').show();
   return false;
@@ -121,9 +121,30 @@ $('.video__close, .opacity').click(function() {
 });
 
 //datepicker
-$('.datepicker span').click(function() {
-	$('.datepicker span').removeClass('active');
-	$(this).addClass('active');  
+ $('.datepicker span').click(function() {
+ 	$('.datepicker span').removeClass('active');
+ 	$(this).addClass('active');  
+ });
+$('.order__calendars').datepicker({
+  monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+  'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+  monthNamesShort: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+  'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+  dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+  dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+  dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+  numberOfMonths: 2,
+  minDate: 1,
+  maxDate: '+12m',
+  firstDay: 1
+});
+$('.order__prev').click(function() {
+  $('.ui-datepicker-prev').trigger('click');
+  return false;
+});
+$('.order__next').click(function() {
+  $('.ui-datepicker-next').trigger('click');
+  return false;
 });
 
 //order types

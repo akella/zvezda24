@@ -11,13 +11,13 @@
 .order__title { padding-bottom: 10px; border-bottom: 3px solid #d1d1d1; font-size: 24px; color: #000; text-transform: uppercase; }
 .order__title span { margin-right: 5px; color: #be0e30; }
 
-.order__date { position: relative; float: left; width: 645px; height: 340px; }
+.order__date { position: relative; float: left; width: 645px; }
 
 .order__pic { float: right; }
 .order__pic img { display: block; width: 100%; }
 
 .order__attention { position: relative; margin-top: 20px; width: 244px; padding: 10px 17px 10px 44px; line-height: 1.4; border: 2px solid #be0e30; font-family: Arial, Tahoma, sans-serif; color: #515050; }
-.order__attention i { position: absolute; top: 10px; left: 20px; background: url('../img/icons-sc707faa97a.png') 0 -268px no-repeat; width: 6px; height: 29px; }
+.order__attention i { position: absolute; top: 10px; left: 20px; background: url('../img/icons-s88cac3acf5.png') 0 -436px no-repeat; width: 6px; height: 29px; }
 
 .order_step1 { margin-bottom: 50px; overflow: hidden; }
 
@@ -40,12 +40,36 @@
 .order__agree .check { float: left; margin-right: 70px; font-family: 'Cuprum', Tahoma, Arial, sans-serif; font-size: 18px; color: #515050; }
 .order__agree .check a { color: #515050; border-bottom: 1px dotted #8E8E8E; }
 .order__agree span { position: relative; float: left; height: 23px; padding-left: 110px; line-height: 23px; font-size: 18px; color: #515050; }
-.order__agree span i { position: absolute; top: -1px; left: 0; background: url('../img/icons-sc707faa97a.png') 0 0 no-repeat; width: 97px; height: 23px; }
+.order__agree span i { position: absolute; top: -1px; left: 0; background: url('../img/icons-s88cac3acf5.png') 0 0 no-repeat; width: 97px; height: 23px; }
 
 .order__payment { overflow: hidden; }
 .order__payment input, .order__payment span { float: left; height: 90px; font-size: 30px; text-transform: uppercase; font-family: 'Cuprum', Tahoma, Arial, sans-serif; }
 .order__payment input { margin-right: 50px; padding: 0 60px; background: #be0e30; color: #fff; text-align: center; cursor: pointer; }
 .order__payment span { color: #4c4c4c; }
+
+.order__nav { float: right; }
+.order__nav button { float: left; }
+
+.order__prev { margin-right: 10px; background: url('../img/icons-s88cac3acf5.png') 0 -164px no-repeat; width: 32px; height: 32px; }
+.order__prev:hover { background: url('../img/icons-s88cac3acf5.png') 0 -361px no-repeat; width: 32px; height: 32px; }
+
+.order__next { background: url('../img/icons-s88cac3acf5.png') 0 -206px no-repeat; width: 32px; height: 32px; }
+.order__next:hover { background: url('../img/icons-s88cac3acf5.png') 0 -319px no-repeat; width: 32px; height: 32px; }
+
+.order__calendars { margin-right: -30px; }
+.order__calendars .ui-datepicker-inline { width: 100% !important; overflow: hidden; }
+.order__calendars .ui-datepicker-group { float: left; width: 313px !important; }
+.order__calendars .ui-datepicker-group-first { margin-right: 20px; }
+.order__calendars .ui-corner-all, .order__calendars .ui-datepicker-year { display: none; }
+.order__calendars .ui-datepicker-title { height: 40px; line-height: 40px; border-bottom: 1px solid #d1d1d1; font-size: 18px; color: #000; }
+.order__calendars .ui-datepicker-calendar { width: 100%; border-spacing: 1px; color: #777676; }
+.order__calendars .ui-datepicker-calendar th { width: 42px; height: 42px; text-align: center; font-size: 16px; font-weight: normal; }
+.order__calendars .ui-datepicker-calendar td a, .order__calendars .ui-datepicker-calendar td span { display: block; width: 42px; height: 42px; margin: 0 1px 1px 0; line-height: 42px; text-align: center; background: #f6f6f6; font-family: Arial, Tahoma, sans-serif; }
+.order__calendars .ui-datepicker-calendar td a { color: #777676; }
+.order__calendars .ui-datepicker-calendar td a:hover { color: #be0e30; }
+.order__calendars .ui-datepicker-calendar td span { background: #c7c7c7; color: #fff; }
+.order__calendars .ui-datepicker-calendar td .ui-state-active { background: #be0e30; color: #fff; }
+.order__calendars .ui-datepicker-calendar td .ui-state-active:hover { color: #fff; }
 
 .datepicker { margin-right: -30px; overflow: hidden; }
 .datepicker li { float: left; width: 313px; margin-right: 20px; }

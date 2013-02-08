@@ -32,7 +32,7 @@
 	position: relative;
 	float: left;
 	width: 645px;
-	height: 340px;
+	//height: 340px;
 }
 .order__pic {
 	float: right;
@@ -146,7 +146,7 @@
 		font-size: 18px;
 		color: #515050;
 		i {
-			position: absolute;
+			position: absolute;  
 			top: -1px;
 			left: 0;
 			@include sized-sprite($icons, pay);
@@ -175,7 +175,92 @@
 		color: #4c4c4c;
 	}
 }
+//order__nav
+.order__nav {
+	float: right;
+	button {
+		float: left;
+	}
+}
+.order__prev {
+	margin-right: 10px;
+	@include sized-sprite($icons, dp-prev);
+	&:hover {
+		@include sized-sprite($icons, dp-prev-h);
+	}
+}
+.order__next {
+	@include sized-sprite($icons, dp-next);
+	&:hover {
+		@include sized-sprite($icons, dp-next-h);
+	}
+}
 //datepicker
+.order__calendars {
+	margin-right: -30px;
+	.ui-datepicker-inline {
+		width: 100% !important;		
+		overflow: hidden;
+	}
+	.ui-datepicker-group {
+		float: left;
+		width: 313px !important;
+	}	
+	.ui-datepicker-group-first {
+		margin-right: 20px;
+	}
+	.ui-corner-all, .ui-datepicker-year {
+		display: none;
+	}
+	.ui-datepicker-title {
+		height: 40px;
+		line-height: 40px;
+		border-bottom: 1px solid #d1d1d1;
+		font-size: 18px;
+		color: #000;
+	}
+	.ui-datepicker-calendar {
+		width: 100%;
+		border-spacing: 1px;
+		color: #777676;
+		th {
+			width: 42px;
+			height: 42px;
+			text-align: center;
+			font-size: 16px;		
+			font-weight: normal;
+		}
+		td {
+			a, span {
+				display: block;
+				width: 42px;
+				height: 42px;
+				margin: 0 1px 1px 0;
+				line-height: 42px;
+				text-align: center;
+				background: #f6f6f6;
+				font-family: Arial, Tahoma, sans-serif;						
+			}
+			a {
+				color: #777676;
+				&:hover {
+					color: $red;
+				}
+			}
+			span {
+				background: #c7c7c7;
+				color: #fff;
+			}
+			.ui-state-active {
+				background: $red;
+				color: #fff;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}		
+	}
+}
 .datepicker {
 	margin-right: -30px;
 	overflow: hidden;
